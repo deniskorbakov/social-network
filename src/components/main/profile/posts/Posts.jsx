@@ -1,4 +1,4 @@
-import Post from "./post/Post.jsx";
+import Post from "../post/Post.jsx";
 function Posts() {
     return (
         <div className="container mx-auto mt-5 p-5 text-center">
