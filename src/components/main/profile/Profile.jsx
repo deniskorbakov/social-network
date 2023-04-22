@@ -5,7 +5,7 @@ import Posts from "./posts/Posts.jsx";
 
 function Profile() {
     return (
-        <div className="container mx-auto flex-grow ">
+        <div className="container mx-auto flex-grow">
             <Background/>
             <UserInfo/>
             <AddPost/>
