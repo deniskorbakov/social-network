@@ -10,7 +10,7 @@ function App() {
         <BrowserRouter>
             <div className="bg-gradient-to-r from-indigo-800 to-cyan-500">
                 <Header/>
-                <main className="shadow-2xl rounded bg-gradient-to-r from-indigo-800 to-cyan-500">
+                <main className="container mx-auto shadow-2xl rounded bg-gradient-to-r from-indigo-800 to-cyan-500">
                     <Routes>
                         <Route path='/profile' element={<Profile/>}/>
                         <Route path='/dialogs' element={<Dialogs/>}/>
