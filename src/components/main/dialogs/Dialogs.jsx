@@ -53,7 +53,7 @@ function Dialogs() {
                 <h1 className="font-bold text-3xl text-white uppercase">My Dialog</h1>
             </div>
 
-            <div className="flex border border-white rounded-md mt-11">
+            <div className="flex border border-white rounded-md mt-5 h-4/5">
                 <div className="flex-initial w-96 border-r">
                     <div className="container text-center border-b p-2">
                         <p className="text-2xl font-bold text-white">Dialogs</p>
