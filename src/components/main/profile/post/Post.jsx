@@ -10,6 +10,17 @@ function Post(props) {
             <div className="text-left">
                 <div className="text-xl font-medium text-black">{props.name}</div>
                 <p className="text-slate-500 mt-1">{props.message}</p>
+                <div className="flex space-x-4">
+                    <div>
+                        <button className=""><i className="fa-solid fa-heart text-red-600 text-2xl hover:text-red-800"></i></button>
+                    </div>
+                    <div>
+                        <p className="text-xl">
+                            0 like
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     );
