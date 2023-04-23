@@ -16,7 +16,7 @@ function Post(props) {
                     </div>
                     <div>
                         <p className="text-xl">
-                            0 like
+                            {props.like}
                         </p>
                     </div>
                 </div>
