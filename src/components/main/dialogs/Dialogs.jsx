@@ -1,5 +1,15 @@
 import {NavLink} from "react-router-dom";
 
+let dataDialog = [
+    {id: 1, name: "denis", message: "hi"},
+    {id: 2, name: "dima", message: "hello"},
+];
+
+let dataMessage = [
+    {name: "denis", message: "hi"},
+    {name: "dima", message: "hello"},
+];
+
 function DialogItem(props) {
     let path = "/dialogs/" + props.id;
 
@@ -49,15 +59,14 @@ function Dialogs() {
                         <p className="text-2xl font-bold text-white">Dialogs</p>
                     </div>
 
-                    <DialogItem id="1" name="111" message="asdasd"/>
-                    <DialogItem id="2" name="111" message="asdasd"/>
-                    <DialogItem id="3" name="111" message="asdasd"/>
+                    <DialogItem id={dataDialog[0].id} name={dataDialog[0].name} message={dataDialog[0].message}/>
+                    <DialogItem id={dataDialog[1].id} name={dataDialog[1].name} message={dataDialog[1].message}/>
 
                 </div>
 
                 <div className="flex-initial w-full">
-                   <Message name="qweqwe" message="asdasdas"/>
-                   <Message name="qweqwe" message="asdasdas"/>
+                   <Message name={dataMessage[0].name} message={dataMessage[0].message}/>
+                   <Message name={dataMessage[1].name} message={dataMessage[1].message}/>
                 </div>
             </div>
         </div>
