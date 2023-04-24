@@ -5,15 +5,15 @@ import Profile from "./main/profile/Profile.jsx";
 import Dialogs from "./main/dialogs/Dialogs.jsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
-function App() {
+function App(props) {
     return (
         <BrowserRouter>
             <div className="bg-gradient-to-r from-indigo-800 to-cyan-500">
                 <Header/>
                 <main className="container mx-auto shadow-2xl rounded bg-gradient-to-r from-indigo-800 to-cyan-500">
                     <Routes>
-                        <Route path='/profile' element={<Profile/>}/>
-                        <Route path='/dialogs' element={<Dialogs/>}/>
+                        <Route path='/dialogs' element={<Dialogs state={props.state.dialogsPage}/>}/>
+                        <Route path='/profile' element={<Profile state={props.state.profilePage}/>}/>
                     </Routes>
                 </main>
                 <Footer/>
