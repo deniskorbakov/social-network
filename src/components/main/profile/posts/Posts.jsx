@@ -1,15 +1,8 @@
 import Post from "../post/Post.jsx";
 
-let posts = [
-    {name: "denis", message: "hello", like: 5},
-    {name: "denis", message: "hello", like: 5},
-    {name: "denis", message: "hello", like: 5},
-    {name: "denis", message: "hello", like: 5},
-    {name: "denis", message: "hello", like: 5},
-];
+function Posts(props) {
+    let postsElement = props.posts.map( p => <Post name={p.name} message={p.message} like={p.like}/>)
 
-let postsElement = posts.map( p => <Post name={p.name} message={p.message} like={p.like}/>)
-function Posts() {
     return (
         <div className="container mx-auto mt-5 p-5 text-center">
             <h3 className="font-bold text-3xl text-white mt-10">My Posts</h3>
